@@ -1,3 +1,2 @@
 #!/bin/bash
-grep $1 file | tr ' ' '\n' | grep $1 | wc -l
-
+grep -v "^#" $2 | grep -i -w $1 | tr ' ' '\n' | grep -i -w $1 | wc -l
