@@ -1,1 +1,3 @@
 *.pdf
+compile/
+!compile/important/
